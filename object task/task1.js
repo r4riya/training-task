@@ -1,10 +1,10 @@
- let isAdmin=false
 let user = {
     name: "John",
-    years: 30,
-    IsAdmin: isAdmin?true:false,
-};
-
-   let {name:firstname,years:age,IsAdmin}=user
-   console.log(firstname,age,IsAdmin)
-  //console.log(firstname,age,user.hasOwnProperty(isAdmin))
+    years: 30
+  };
+  
+  let {name, years: age, isAdmin = false} = user;
+  
+  console.log( name ); // John
+  console.log( age ); // 30
+  console.log( isAdmin ); // false
